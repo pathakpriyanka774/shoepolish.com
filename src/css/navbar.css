@@ -1,0 +1,104 @@
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.navbar-shell {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 2rem;
+    min-height: 116px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.nav-links a {
+    color: #222222;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-self: end;
+}
+
+.signin-link {
+    color: #222222;
+    font-size: 1.35rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.book-btn {
+    background: #1f1f1f;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.35rem;
+    font-size: 1.35rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+}
+
+@media (max-width: 1100px) {
+    .navbar-shell {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav-links,
+    .nav-actions {
+        justify-self: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .nav-links {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a,
+    .signin-link,
+    .book-btn {
+        font-size: 1rem;
+    }
+
+    .logo {
+        height: 82px;
+    }
+
+    .book-btn {
+        min-height: 52px;
+        padding: 0.85rem 1.2rem;
+    }
+}
