@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './navbar.css'
+import logo from '../assets/shoespolishLogo.png'
 
 export default function Navbar({ onOpenBooking }) {
   const [scrolled, setScrolled] = useState(false)
@@ -14,7 +15,7 @@ export default function Navbar({ onOpenBooking }) {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-inner navbar-shell">
         <div className="brand">
-          <img src="/src/assets/shoespolishLogo.png" alt="ShoesPolish logo" className="logo" />
+            <img src={logo} alt="ShoesPolish logo" className="logo" />
         </div>
         <nav className="nav-links" aria-label="Primary navigation">
           <a href="#home">Home</a>

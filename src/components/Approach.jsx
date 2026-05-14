@@ -1,4 +1,5 @@
 import React from 'react'
+import approachImage from '../assets/hero1.avif'
 
 const approachSteps = [
   {
@@ -43,7 +44,7 @@ export default function Approach() {
             </p>
           </div>
           <div className="approach-image">
-            <img src="/src/assets/hero1.avif" alt="Shoe-making workshop" />
+            <img src={approachImage} alt="Shoe-making workshop" />
           </div>
         </div>
       </div>

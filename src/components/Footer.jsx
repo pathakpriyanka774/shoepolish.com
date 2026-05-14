@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../assets/shoespolishLogo.png'
 
 export default function Footer() {
   return (
@@ -26,7 +27,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-brand">
-              <img src="/src/assets/shoespolishLogo.png" alt="ShoesPolish" className="footer-logo" />
+              <img src={logo} alt="ShoesPolish" className="footer-logo" />
             </div>
           </div>
           <div className="footer-bottom">Cobbler support · hygiene · infrastructure · livelihood dignity</div>
